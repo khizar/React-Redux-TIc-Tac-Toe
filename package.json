@@ -30,7 +30,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/khizar"
   },
   "devDependencies": {
     "assets-webpack-plugin": "^3.4.0",
