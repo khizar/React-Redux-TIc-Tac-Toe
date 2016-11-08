@@ -1,0 +1,58 @@
+#app,
+#app > div,
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: arial, sans-serif;
+
+    .wrapper {
+        width: 100%;
+        height: 100%;
+        background: #466368;
+        background: radial-gradient(#648880, #293f50);
+
+        .main {
+            margin: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            padding: 20px;
+            max-width: 643px;
+            height: 412px;
+            background-color: #f8f8f8;
+            color: rgba(0, 0, 0, 0.54);
+
+            .main-inner {
+                background-color: #f8f8f8;
+                color: rgba(0, 0, 0, 0.54);
+                margin: -20px -20px;
+
+                .row1 {
+                    padding: 12px 16px;
+                    transition: box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1);
+                    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.16);
+                    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.16);
+                    height: 128px;
+
+                    h3 {
+                        text-align: center;
+                    }
+                }
+
+                .row2 {
+                    background-color: #14bdac;
+                    padding: 10px 0;
+                    perspective: 100px;
+                    position: relative;
+                    z-index: 0;
+                    height: 216px;
+                }
+            }
+        }
+    }
+}

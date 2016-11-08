@@ -1,0 +1,70 @@
+#TicTacBoard {
+    #boardLines {
+        width: 216px;
+        margin: auto;
+        right: 0;
+        z-index: 0;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transition: opacity 0.5s cubic-bezier(0.4, 0, 1, 1), transform 0.5s cubic-bezier(0.4, 0, 1, 1), visibility 0.5s step-end;
+        -webkit-transition: opacity 0.5s cubic-bezier(0.4, 0, 1, 1), transform 0.5s cubic-bezier(0.4, 0, 1, 1), visibility 0.5s step-end;
+    }
+
+    #boardLines path {
+        stroke-dasharray: 102;
+        stroke-dashoffset: 0;
+        stroke: #0da192;
+        stroke-width: 6px;
+        fill: none;
+        transition: stroke-dashoffset 0.225s cubic-bezier(0.4, 0, 0.2, 1);
+        -webkit-transition: stroke-dashoffset 0.225s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    table {
+        border-spacing: 6px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 3;
+        width: 216px;
+        height: 216px;
+        transition: opacity 0.5s cubic-bezier(0.4, 0, 1, 1), transform 0.5s cubic-bezier(0.4, 0, 1, 1), visibility 0.5s step-end;
+        -webkit-transition: opacity 0.5s cubic-bezier(0.4, 0, 1, 1), transform 0.5s cubic-bezier(0.4, 0, 1, 1), visibility 0.5s step-end;
+
+        td {
+            height: 48px;
+            padding: 12px;
+            position: relative;
+            vertical-align: top;
+            width: 48px;
+
+            span {
+                display: block;
+            }
+
+            .shape {
+                height: 48px;
+                position: absolute;
+                width: 48px;
+
+                path {
+                    fill: none;
+                    stroke-width: 16px;
+                }
+            }
+
+            .x {
+                stroke: rgb(84, 84, 84);
+                stroke-dasharray: 135.764;
+                stroke-dashoffset: 0;
+            }
+
+            .o {
+                stroke: rgb(242, 235, 211);
+                stroke-dasharray: 301.635;
+                stroke-dashoffset: 0;
+            }
+        }
+    }
+}

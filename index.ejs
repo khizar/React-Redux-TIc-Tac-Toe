@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title><%= config.title %></title>
+    <meta name="description" content="">
+    <link rel="apple-touch-icon" href="public/apple-touch-icon.png">
+    <!-- Latest compiled CSS -->
+    <link rel="stylesheet" type="text/css" href="<%= css %>">
+  </head>
+  <body>
+    <div id="app"></div>
+    <%_ if (!debug && config.trackingID) { _%>
+    <script>
+      window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+      ga('create','<%= config.trackingID %>','auto');ga('send','pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    <%_ } _%>
+    <script type="text/javascript" src="<%= bundle %>"></script>
+  </body>
+</html>
