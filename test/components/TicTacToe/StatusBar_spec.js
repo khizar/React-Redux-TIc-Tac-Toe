@@ -4,7 +4,7 @@ import test from 'ava';
 import { Provider } from 'react-redux';
 import configureStore from '../../../src/store/configureStore.js';
 
-import StatusBarContainer from '../../../src/components/TicTacToe/StatusBarContainer';
+import StatusBarContainer from '../../../src/components/TicTacToe/StatusBar/StatusBarContainer';
 
 test('Component: - StatusBar', t => {
     const { store } = configureStore();

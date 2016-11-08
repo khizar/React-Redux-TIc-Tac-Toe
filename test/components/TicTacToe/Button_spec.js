@@ -4,7 +4,7 @@ import test from 'ava';
 import { Provider } from 'react-redux';
 import configureStore from '../../../src/store/configureStore.js';
 
-import ButtonContainer from '../../../src/components/TicTacToe/ButtonContainer';
+import ButtonContainer from '../../../src/components/TicTacToe/Button/ButtonContainer';
 
 test('Component: - Button', t => {
     const { store } = configureStore();

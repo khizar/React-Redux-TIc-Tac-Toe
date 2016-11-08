@@ -1,8 +1,8 @@
 import React, { PropTypes } from 'react';
 import { List } from 'immutable';
-import Shape from './Shapes';
+import Shape from '../TurnMarker';
 
-require('../../../styles/components/TicTacBoard.scss');
+require('../../../../styles/components/TicTacBoard.scss');
 
 const TicTacBoard = props => (
     <div id="TicTacBoard">

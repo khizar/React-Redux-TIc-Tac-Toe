@@ -1,9 +1,9 @@
 import React, { PropTypes } from 'react';
 import { List } from 'immutable';
 import classNames from 'classnames';
-import Shape from './Shapes';
+import Shape from '../TurnMarker';
 
-require('../../../styles/components/ScoreList.scss');
+require('../../../../styles/components/ScoreList.scss');
 
 const ScoreList = props => (
     <div className={'score-wrapper'}>

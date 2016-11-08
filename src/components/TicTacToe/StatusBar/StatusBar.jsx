@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
-import Shape from './Shapes';
+import Shape from '../TurnMarker';
 
-require('../../../styles/components/StatusBar.scss');
+require('../../../../styles/components/StatusBar.scss');
 
 const StatusBar = props => (
     <div className={'status'}>

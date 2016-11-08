@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import TicTacBoard from './TicTacBoard';
-import { writeAtCell, nextTurn } from '../../actions/coreActions';
+import { writeAtCell, nextTurn } from '../../../actions/coreActions';
 
 const mapStateToProps = state => ({
     board: state.getIn(['core', 'board'])

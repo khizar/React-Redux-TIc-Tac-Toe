@@ -4,7 +4,7 @@ import test from 'ava';
 import { Provider } from 'react-redux';
 import configureStore from '../../../src/store/configureStore.js';
 
-import ScoreListContainer from '../../../src/components/TicTacToe/ScoreListContainer';
+import ScoreListContainer from '../../../src/components/TicTacToe/ScoreList/ScoreListContainer';
 
 test('Component: - ScoreList', t => {
     const { store } = configureStore();
